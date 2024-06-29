@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="mainBorderPane" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="dev.brianmiller.javafxchallengecontactsapp.ContactsAppController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+    </padding>
+    <top>
+        <MenuBar>
+            <Menu text="Contacts">
+                <MenuItem onAction="#handleAddNewContact" text="Add New Contact..." />
+                <MenuItem onAction="#handleExit" text="Exit" />
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <GridPane>
+        <TableView fx:id="tableView"  GridPane.rowIndex="0" GridPane.columnIndex="0"
+                   GridPane.vgrow="ALWAYS" GridPane.hgrow="ALWAYS"/>
+        </GridPane>
+    </center>
+
+</BorderPane>
